@@ -84,7 +84,7 @@ programa {
     limpa()
     total = vl_prego + vl_parafuso + vl_rebite + vl_martelo + vl_serrote + vl_tekBond + vl_rebitadora
     escreva(nome, " a valor total da sua compra ficou em: ", total)
-    escreva("Qual a forma de pagamento? \n 1. Dinheiro \n 2. Cartão \n 3. Pix \n 4. BQ")
+    escreva("Qual a forma de pagamento? \n 1. Dinheiro \n 2. Cartão \n 3. Pix \n")
     leia(pag)
     escolha (pag){
       caso 1: 
@@ -94,7 +94,7 @@ programa {
         } senao {
           escreva("\nO valor total ficou esse mesmo, pode passar lá no caixa")
         }
-        para
+        pare
       caso 2: 
         escreva("\n 1. Débito \n  2. Crédito?")
         leia(frmPag)
@@ -107,15 +107,15 @@ programa {
           escreva("Qual o código de segurança: ")
           leia(cdc)
           escreva("Passa lá no caixa agora!!")
-          para
+          pare
           }
       caso 3: 
         escreva("POde mandar no pix lá ")
-        para 
+        pare
 
       caso contrario: 
         escreva("Opção inválida!")
-      para
+      pare
         }
     }
   }
